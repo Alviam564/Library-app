@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -769,6 +770,9 @@ select {
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
   .header__description {
     padding: 0 24px;
   }
@@ -804,6 +808,9 @@ select {
 
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
+  html, body {
+    overflow-x: hidden;
+  }
   .btn__menu {
     display: block;
   }
@@ -825,5 +832,10 @@ select {
   }
   .cart__book--info {
     padding-left: 0;
+  }
+}
+@media (max-width: 320px) {
+  html, body {
+    overflow-x: hidden;
   }
 }
